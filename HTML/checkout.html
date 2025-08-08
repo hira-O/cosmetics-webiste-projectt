@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Mystic Glam</title>
+    <link rel="stylesheet" href="style-checkout.css">
+</head>
+
+<body>
+    
+    <div class="confirmation-container">
+        <h1>Order Confirmation</h1>
+        <div class="product-list" id="product-list">
+            <h3>Your Selected Products:</h3>
+            <!-- Products will be inserted here -->
+        </div>
+        <div class="form-container">
+            <h3>Enter Your Details:</h3>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <button type="submit" class="btn" onclick="window.location.href='order-confirmation.html'">Confirm
+                    Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve the cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const productList = document.getElementById('product-list');
+
+        // Display the cart items
+        cart.forEach(product => {
+            const productItem = document.createElement('div');
+            productItem.className = 'product-item';
+            productItem.innerHTML = `<strong>${product.name}</strong> - $${(product.price / 100).toFixed(2)}`;
+            productList.appendChild(productItem);
+        });
+
+        // Handle form submission
+        document.getElementById('order-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+
+            // Clear the cart and form
+            localStorage.removeItem('cart');
+            document.getElementById('order-form').reset();
+            productList.innerHTML = '<p>Your cart is now empty.</p>';
+        });
+    </script>
+     
+</body>
+
+</html>

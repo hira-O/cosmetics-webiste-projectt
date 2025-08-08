@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Glam</title>
+    <link rel="stylesheet" href="style-main.css">
+    <!--cursive font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ZA+Guides&family=Sacramento&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <!--glam on font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ZA+Guides&family=Sacramento&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <!--header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dynalight&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ZA+Guides&family=Sacramento&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dynalight&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IN+Guides&family=Playwrite+MX+Guides&family=Playwrite+ZA+Guides&family=Sacramento&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Dynalight&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IN+Guides&family=Playwrite+MX+Guides&family=Playwrite+ZA+Guides&family=Sacramento&family=Satisfy&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Dynalight&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IN+Guides&family=Playwrite+MX+Guides&family=Playwrite+ZA+Guides&family=Sacramento&family=Satisfy&family=Send+Flowers&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div>Mystic <span>Glam</span></div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#makeup">Makeup</a></li>
+                <li><a href="#skincare">Skin Care</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#jewellery">Jewellery</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <video src="videowebpage.mp4" autoplay loop muted></video>
+            <!--<h1 style="font-family: balmoral script;">Mystic Glam</h1>-->
+            <h1>Mystic Glam</h1>
+            <h2><i>" Elevate Your Look, Embrace the Mystic "</i></h2>
+            <!-- <video src="videowebpage.mp4" autoplay loop muted></video> -->
+            <button class="btn" onclick="window.location.href='#makeup'">Shop Now</button>
+        </section>
+
+        <section id="makeup" class="products">
+            <h2 class="subhead">MAKEUP</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="makeup1.jpg" alt="BLUSH">
+                    <h3>BLUSH</h3>
+                    <h4>$29</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('BLUSH', 2900)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="makeup5.jpg" alt="TINT">
+                    <h3>TINT</h3>
+                    <h4>$45</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('TINT', 4500)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="lipglosss.jpg" alt="LIP GLOSS">
+                    <h3>LIP GLOSS</h3>
+                    <h4>$20</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('LIP GLOSS', 2000)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="skincare" class="products">
+            <h2 class="subhead">SKIN CARE</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="glowtoner.webp" alt="GLOW TONER">
+                    <h3>GLOW TONER</h3>
+                    <h4>$35</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('GLOW TONER', 3500)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="moisturiser.jpg" alt="MOISTURIZER">
+                    <h3>MOISTURIZER</h3>
+                    <h4>$55</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('MOISTURIZER', 5500)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="lipbalm.jpg" alt="LIP BALM">
+                    <h3>
+                        LIP BALM</h4>
+                        <h4>$15</h4>
+                        <button class="btn" id="btn-hov" onclick="addToCart('LIP BALM', 1500)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="accessories" class="products">
+            <h2 class="subhead">ACCESSORIES</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="mirror.jpg" alt="MIRROR">
+                    <h3>VANITY MIRROR</h3>
+                    <h4>$5</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('EYE LASHES', 800)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="accessories2.jpg" alt="BEAUTY BLENDER">
+
+                    <h3>
+                        BEAUTY BLENDER</h4>
+                        <h4>$6</h4>
+                        <button class="btn" id="btn-hov" onclick="addToCart('BEAUTY BLENDER', 600)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="accessories3.jpg" alt="MAKEUP BRUSHES">
+                    <h3>
+                        MAKEUP BRUSHES</h4>
+                        <h4>$12</h4>
+                        <button class="btn" id="btn-hov" onclick="addToCart('MAKEUP BRUSHES', 1200)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="jewellery" class="products">
+            <h2 class="subhead">JEWELLERY</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="flowerring.jpg" alt="BUTTERFLY RING">
+                    <h3>BUTTERFLY RING</h3>
+                    <h4>$8</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('BUTTERFLY RING', 800)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="jewelry44.jpg" alt="PEARL BRACELET">
+                    <h3>PEARL BRACELET</h3>
+                    <h4>$9</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('PEARL BRACELET', 900)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="necklace.jpg" alt="PINK RING">
+                    <h3>NECKLACE</h3>
+                    <h4>$5</h4>
+                    <button class="btn" id="btn-hov" onclick="addToCart('PINK RING', 1000)">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="checkout" style="text-align: center; margin: 50px 0;">
+            <button class="btn" onclick="window.location.href='checkout.html'">Checkout</button>
+        </div>
+
+        <section id="about" class="about">
+
+            <h2>About Us</h2>
+            <p>
+                "Be unapologetically YOU – fierce, flawless, and undeniably beautiful."<br />At MysticGlam, we take pride in being 100% cruelty-free. Our products are made with care, using ethically sourced ingredients, without <br />causing harm to animals—because beauty should never compromise compassion.
+            </p>
+            <!--<div class="team-gallery">-->
+                <!--<div class="team-member">-->
+                    <!--<img src="jewelry11.jpg" alt="Team Member 3" />-->
+                    <!--<p>Shizra Azhar</p>-->
+                <!--</div>-->
+                <!--<div class="team-member">-->
+                    <!--<img src="hira.png" alt="Team Member 3" />-->
+                    <!--<p>Hira Naseer</p>-->
+                <!--</div>-->
+                <!--<div class="team-member">-->
+                    <!--<img src="jewelry11.jpg" alt="Team Member 3" />-->
+                    <!--<p>Minahil Rauf</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mystic Glam. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script>
+        let cart = [];
+
+        function addToCart(productName, productPrice) {
+            const product = { name: productName, price: productPrice };
+            cart.push(product);
+            alert(productName + ' has been added to your cart.');
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Initialize cart from localStorage if available
+        window.onload = function () {
+            const storedCart = localStorage.getItem('cart');
+            if (storedCart) {
+                cart = JSON.parse(storedCart);
+            }
+        }
+    </script> -->
+
+</body>
+</html>
