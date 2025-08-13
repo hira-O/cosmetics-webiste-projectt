@@ -9,8 +9,7 @@ A responsive e-commerce platform for cosmetics, built with HTML, CSS, and JavaSc
 ✔ **Elegant UI** – Clean design with intuitive navigation  
 ✔ **Product Catalog** – Makeup, skincare, and beauty tools with detailed info  
 ✔ **Cart & Checkout** – Smooth purchasing process  
-✔ **User Accounts** – Order tracking and saved favorites  
-✔ **Blog** – Beauty tips and tutorials  
+✔ **Order Confirmation** – Smooth purchasing process  
 
 ---
 
