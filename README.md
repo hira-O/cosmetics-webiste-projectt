@@ -30,7 +30,7 @@ A responsive e-commerce platform for cosmetics, built with HTML, CSS, and JavaSc
 ---
 
 ## 📸 **Demo Video**  
-![Demo Video](./websitemysticGalm-ezgif.com-video-to-gif-converter.gif)  
+[📹 Watch Full Demo Video](https://drive.google.com/file/d/14j1ZItM_kgURbVE67jziuUTdstO1tlCy/view?usp=sharing)
 
 
 ---
