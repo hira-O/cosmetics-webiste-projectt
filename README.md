@@ -1,5 +1,4 @@
 # Mythic Glam - Cosmetic E-Commerce Website  
-![Banner](E:\Downloads\first.png)  
 
 ### ✨ **Modern Beauty Shopping Experience**  
 A responsive e-commerce platform for cosmetics, built with HTML, CSS, and JavaScript.  
@@ -32,7 +31,7 @@ A responsive e-commerce platform for cosmetics, built with HTML, CSS, and JavaSc
 ---
 
 ## 📸 **Demo Video**  
-![Demo Video](website mysticGalm.mp4) 
+![Demo Video](./websitemysticGalm-ezgif.com-video-to-gif-converter.gif)  
 
 
 ---
